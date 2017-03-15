@@ -9,5 +9,5 @@ class Member(models.Model):
 	role = models.CharField(max_length=7)
 
 	def __str__(self):
-		return " ".join(["ID", str(self.id), "--", self.firstname, 
+		return " ".join([self.firstname, 
 			self.lastname, self.phone, self.email, self.role])
