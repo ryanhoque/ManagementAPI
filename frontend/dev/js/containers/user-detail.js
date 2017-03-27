@@ -1,3 +1,4 @@
+// Container w/ component for edit screen.
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
@@ -6,10 +7,6 @@ import {reduxForm} from 'redux-form';
 import MemberForm from '../containers/MemberForm';
 import { initialize } from 'redux-form';
 import {updateForm} from '../actions/updateForm';
-
-/*
- * We need "if(!this.props.user)" because we set state to null by default
- * */
 
 class UserDetail extends Component {
 

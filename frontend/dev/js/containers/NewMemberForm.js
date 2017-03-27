@@ -1,9 +1,8 @@
-// Component for the editing members form. Uses Redux Form library.
+// Component for the new member form. Uses the Redux Form library.
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {deleteUser} from '../actions/deleteUser';
 
 let MemberForm = (props) => {
   const { handleSubmit, pristine, reset, submitting } = props;
@@ -38,8 +37,7 @@ let MemberForm = (props) => {
         </div>
       </div>
       <hr/>
-      <div className="Container">
-        <button className="btn btn-danger" onClick={() => props.deleteUser(props.user.id)}>Delete</button>
+      <div className="Container2">
         <button className="btn btn-primary" disabled={pristine || submitting} type="submit">Save</button>
       </div>
     </form>
@@ -50,14 +48,4 @@ MemberForm = reduxForm({
   form: 'member'
 })(MemberForm);
 
-function mapStateToProps(state) {
-    return {
-        user: state.activeUser
-    };
-}
-
-function matchDispatchToProps(dispatch){
-    return bindActionCreators({deleteUser: deleteUser}, dispatch);
-}
-
-export default connect(mapStateToProps, matchDispatchToProps)(MemberForm);
+export default MemberForm;

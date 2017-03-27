@@ -1,3 +1,4 @@
+// This is where the Redux store is initialized and React DOM is rendered.
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from "react-dom";

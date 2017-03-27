@@ -1,3 +1,4 @@
+// The overarching react component.
 import React from 'react';
 import UserView from '../containers/user-view';
 require('../../scss/style.scss');

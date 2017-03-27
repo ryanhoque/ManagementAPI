@@ -1,8 +1,4 @@
-/*
- * The users reducer will always return an array of users no matter what
- * You need to return something, so if there are no users then just return an empty array
- * */
-
+// Reducer for showing the list of members.
 export default function (state = null, action) {
     switch (action.type) {
         case 'FORM_UPDATED':
@@ -11,6 +7,20 @@ export default function (state = null, action) {
                     state[i] = action.payload;
                 }
             }
+            return state;
+            break;
+        case 'USER_DELETED':
+            for (var i = 0; i < state.length; i++) {
+                if (state[i].id == action.payload) {
+                    state.splice(i,1);
+                }
+            }
+            return state;
+            break;
+        case 'NEW_MEMBER':
+            // increment last unique id to get new unique id
+            action.payload.id = state[state.length - 1].id + 1;
+            state.push(action.payload);
             return state;
             break;
     }

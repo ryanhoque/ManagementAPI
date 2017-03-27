@@ -1,7 +1,9 @@
+// Container for deciding which view to show based on state.view.
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import UserList from '../containers/user-list';
 import UserDetails from '../containers/user-detail';
+import NewUser from '../containers/new-user';
 
 class UserView extends Component {
     render() {
@@ -9,6 +11,8 @@ class UserView extends Component {
             return (<UserList />);
         } else if (this.props.view == 'edit') {
             return (<UserDetails />);
+        } else if (this.props.view == 'add') {
+            return (<NewUser />);
         }
         return (<UserList />);
     }
