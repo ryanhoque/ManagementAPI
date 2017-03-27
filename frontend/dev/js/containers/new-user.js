@@ -17,12 +17,15 @@ class NewUser extends Component {
     }
 
     render() {
+        const InitialValues = {
+            initialValues: {role: "regular"}
+        };
         return (
             <div>
                 <h2> Add a team member <button onClick={() => this.props.viewChange('list')}> X </button></h2>
                 <p> Set email, location and role. </p>  
                 <hr/>
-                <MemberForm onSubmit={this.handleSubmit.bind(this)}/>
+                <MemberForm {...InitialValues} onSubmit={this.handleSubmit.bind(this)}/>
             </div>
         );
     }
