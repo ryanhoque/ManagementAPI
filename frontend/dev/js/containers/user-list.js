@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {selectUser} from '../actions/index';
+import {selectUser} from '../actions/clickUser';
 import {viewChange} from '../actions/viewChange';
 
 

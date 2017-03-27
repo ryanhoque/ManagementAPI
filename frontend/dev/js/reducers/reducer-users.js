@@ -3,7 +3,18 @@
  * You need to return something, so if there are no users then just return an empty array
  * */
 
-export default function () {
+export default function (state = null, action) {
+    switch (action.type) {
+        case 'FORM_UPDATED':
+            for (var i = 0; i < state.length; i++) {
+                if (state[i].id == action.payload.id) {
+                    state[i] = action.payload;
+                }
+            }
+            return state;
+            break;
+    }
+    if (!state) {
     return [
         {
             id: 1,
@@ -12,7 +23,6 @@ export default function () {
             email: "adrien@instawork.com",
             phone: "415-310-1619",
             role: "admin",
-            thumbnail: "http://i.imgur.com/7yUvePI.jpg"
         },
         {
             id: 2,
@@ -38,5 +48,8 @@ export default function () {
             phone: "415-310-1619",
             role: "regular",
         }
-    ]
+    ];
+    } else {
+        return state;
+    }
 }
