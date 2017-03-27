@@ -7,27 +7,36 @@ export default function () {
     return [
         {
             id: 1,
-            first: "Bucky",
-            last: "Roberts",
-            age: 71,
-            description: "Bucky is a React developer and YouTuber",
+            first: "Adrien",
+            last: "Olczak",
+            email: "adrien@instawork.com",
+            phone: "415-310-1619",
+            role: "admin",
             thumbnail: "http://i.imgur.com/7yUvePI.jpg"
         },
         {
             id: 2,
-            first: "Joby",
-            last: "Wasilenko",
-            age: 27,
-            description: "Joby loves the Packers, cheese, and turtles.",
-            thumbnail: "http://i.imgur.com/52xRlm8.png"
+            first: "Charlene",
+            last: "Pham",
+            email: "charlene@instawork.com",
+            phone: "415-310-1619",
+            role: "regular",
         },
         {
             id: 3,
-            first: "Madison",
-            last: "Williams",
-            age: 24,
-            description: "Madi likes her dog but it is really annoying.",
-            thumbnail: "http://i.imgur.com/4EMtxHB.png"
+            first: "Benson",
+            last: "Mach",
+            email: "benson@instawork.com",
+            phone: "415-310-1619",
+            role: "regular",
+        },
+        {
+            id: 4,
+            first: "Dan",
+            last: "Petrie",
+            email: "dan@instawork.com",
+            phone: "415-310-1619",
+            role: "regular",
         }
     ]
 }

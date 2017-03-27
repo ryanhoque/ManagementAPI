@@ -9,6 +9,7 @@ import createLogger from 'redux-logger';
 import allReducers from './reducers';
 import App from './components/App';
 
+
 const logger = createLogger();
 const store = createStore(
     allReducers,
