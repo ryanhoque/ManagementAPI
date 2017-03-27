@@ -13,10 +13,10 @@ Application will be on localhost port 3000.
 
 Here are pictures of what it looks like:
 ## List View
-![List](imgs/ListScreen.png | width=100)
+<img src="imgs/ListScreen.png" alt="Add" width="400px">
 
 ## Edit View
-![Edit](imgs/EditScreen.png | width=100)
+<img src="imgs/EditScreen.png" alt="Add" width="400px">
 
 ## Add View
-![Add](imgs/AddScreen.png | width=100)
+<img src="imgs/AddScreen.png" alt="Add" width="400px">
