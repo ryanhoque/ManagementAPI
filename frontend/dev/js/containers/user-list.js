@@ -22,9 +22,9 @@ class UserList extends Component {
                         }
                     >
                         <div>
-                            {user.first} {user.last} ({user.role}) <br/>
+                            <a href="#"> <b>{user.first} {user.last} ({user.role}) </b><br/>
                             {user.phone} <br/>
-                            {user.email}
+                            {user.email} </a>
                         </div>
                     </li>
                     <hr/>
@@ -42,9 +42,9 @@ class UserList extends Component {
                         }
                     >
                         <div>
-                            {user.first} {user.last} <br/>
+                            <a href="#"> <b>{user.first} {user.last} </b><br/>
                             {user.phone} <br/>
-                            {user.email}
+                            {user.email} </a>
                         </div>
                     </li>
                     <hr/>
