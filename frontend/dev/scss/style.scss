@@ -1,0 +1,28 @@
+/* A little bit of styling. I also use bootstrap in dev/src/index.html. */
+
+$primary: #006699;
+
+h2 {
+	color: $primary;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+	margin-left: 20px;
+}
+
+.Container button{
+	margin-right:160px;
+}
+
+.Container2 button{
+	margin-left:250px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
